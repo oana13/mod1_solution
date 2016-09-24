@@ -7,7 +7,7 @@
   function LunchCheckController($scope){
     $scope.menu='';
     $scope.mess='';
-    $scope.messColor='white';
+    $scope.messColor='';
     $scope.checkMenu = function(){
       if($scope.menu.length!=0){
         var arrayOfFood = $scope.menu.split(',');

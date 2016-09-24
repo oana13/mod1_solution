@@ -14,7 +14,9 @@
    <div class="container">
      <h1>Lunch Checker</h1>
       <div ng-controller="LunchCheckController">
-
+        <style>
+          .form-control {border-color: {{messColor}};}
+          </style>
          <div class="form-group" >
              <input id="lunch-menu" type="text"
              ng-model="menu"
@@ -28,7 +30,7 @@
          <div class="form-group message">
            <!-- Your message can go here. -->
            <style>
-             .message { color: {{messColor}}; border-style: solid; border-color: {{messColor}};}
+             .message { color: {{messColor}};}
            </style>
            {{sayMessage()}}
          </div>
